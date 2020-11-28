@@ -1,0 +1,18 @@
+name: github-actions-example
+on: [push]
+jobs:
+  build-server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14.15.0"
+      - name: 의존성 설치
+        run: |
+          cd server
+          yarn
+      - name: 빌드
+        run: yarn build
+      - name: 실행
+        run: yarn start

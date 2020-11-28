@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc ./main.ts",
+    "start": "node ./main.js"
+  },
+  "dependencies": {
+    "tsc": "^1.20150623.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.10"
+  }
+}
