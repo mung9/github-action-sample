@@ -14,8 +14,8 @@ jobs:
           yarn
       - name: 빌드
         run: |
-          yarn build
           cd server
+          yarn build
       - name: 실행
         run: |
           cd server
