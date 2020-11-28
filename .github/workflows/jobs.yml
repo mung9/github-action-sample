@@ -13,6 +13,10 @@ jobs:
           cd server
           yarn
       - name: 빌드
-        run: yarn build
+        run: |
+          yarn build
+          cd server
       - name: 실행
-        run: yarn start
+        run: |
+          cd server
+          yarn start
